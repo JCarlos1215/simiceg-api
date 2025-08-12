@@ -1,0 +1,1 @@
+{"version":3,"file":"formatted-number.js","sourceRoot":"","sources":["../../src/utils/formatted-number.ts"],"names":[],"mappings":";;;AAAa,QAAA,kBAAkB,GAAG,CAAC,KAAa,EAAU,EAAE;IAC1D,OAAO,IAAI,IAAI,CAAC,YAAY,CAAC,OAAO,EAAE;QACpC,qBAAqB,EAAE,CAAC;QACxB,qBAAqB,EAAE,CAAC;QACxB,oBAAoB,EAAE,CAAC;KACxB,CAAC,CAAC,MAAM,CAAC,KAAK,CAAC,CAAC;AACnB,CAAC,CAAC"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"new-graph.js","sourceRoot":"","sources":["../../../../src/modules/graph/models/new-graph.ts"],"names":[],"mappings":";;;;;AAAA;;;;;;;;;;;;;GAaG;AACH,8CAAsB;AAwBtB,MAAM,MAAM,GAAG,aAAG,CAAC,MAAM,CAAC;IACxB,OAAO,EAAE,aAAG,CAAC,MAAM,EAAE,CAAC,QAAQ,EAAE;IAChC,YAAY,EAAE,aAAG,CAAC,QAAQ,EAAE;CAC7B,CAAC,CAAC;AAEH,kBAAe,MAAM,CAAC"}

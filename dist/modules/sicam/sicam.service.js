@@ -1,0 +1,54 @@
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.SICAMService = void 0;
+const tsyringe_1 = require("tsyringe");
+const sicam_pg_repository_1 = require("./repositories/sicam.pg.repository");
+let SICAMService = class SICAMService {
+    constructor(sicamRepository) {
+        this.sicamRepository = sicamRepository;
+    }
+    async getPredioSICAM(claveManzana) {
+        return this.sicamRepository.getPredioSICAM(claveManzana);
+    }
+    async getPredioSICAMById(claveManzana, idPredio) {
+        return this.sicamRepository.getPredioSICAMById(claveManzana, idPredio);
+    }
+    async getAvaluoSICAM(tipoPredio, cuenta, clave) {
+        return this.sicamRepository.getAvaluoSICAM(tipoPredio, cuenta, clave);
+    }
+    async getDebtSICAM(tipoPredio, cuenta, clave) {
+        return this.sicamRepository.getDebtSICAM(tipoPredio, cuenta, clave);
+    }
+    async getPaidSICAM(tipoPredio, cuenta, clave) {
+        return this.sicamRepository.getPaidSICAM(tipoPredio, cuenta, clave);
+    }
+    async getHistorySICAM(tipoPredio, cuenta, clave) {
+        return this.sicamRepository.getHistorySICAM(tipoPredio, cuenta, clave);
+    }
+    async getCertificateData(folio) {
+        return this.sicamRepository.getCertificateData(folio);
+    }
+    async createAvaluoSICAM(idPredio, user, folio, observation, year) {
+        return this.sicamRepository.createAvaluoSICAM(idPredio, user, folio, observation, year);
+    }
+};
+SICAMService = __decorate([
+    tsyringe_1.injectable(),
+    tsyringe_1.registry([{ token: 'SICAMRepository', useClass: sicam_pg_repository_1.SICAMPGRepository }]),
+    __param(0, tsyringe_1.inject('SICAMRepository')),
+    __metadata("design:paramtypes", [Object])
+], SICAMService);
+exports.SICAMService = SICAMService;
+//# sourceMappingURL=sicam.service.js.map
