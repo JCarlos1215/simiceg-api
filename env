@@ -1,0 +1,10 @@
+ENV=dev
+CWD=/srv/simiceg-api/visor-manzanillo-api
+LOG_ENABLED=true
+PORT=3001
+CORS_ALLOW_ORIGIN=http://siman.manzanillo.gob.mx:3000
+DB_CONNECTION=postgres://apimanzanillo:M4Nz4n1Ll025@localhost:5432/manzanillo
+WEBDB_CONNECTION=postgres://apimanzanillo:M4Nz4n1Ll025@localhost:5432/manzanillo_app
+GEOSERVER=http://localhost:8080/geoserver/
+GEOSERVER_AUTH=Basic YWRtaW46WjRRdHx+OzdDYmhRTiI8P1hvMnpQeTc=
+ACCESS_TOKEN_SECRET=JWTMnZNllsecret
